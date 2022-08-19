@@ -1,18 +1,12 @@
 <ion-header>
-  <ion-toolbar color="dark">
-    <ion-title></ion-title>
+  <ion-toolbar color="warning">
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar color="dark">
-    </ion-toolbar>
-  </ion-header>
-  
+<ion-content class="ion-padding">
   <div id="container">
-    <h2>¡Bienvenido!</h2>
-    
+    <img src="assets/asistencia.png" >
+    <h2>¡Bienvenidos estudiantes !</h2>
     <ion-item>
       <ion-label position="floating">Usuario</ion-label>
       <ion-input></ion-input>
@@ -23,7 +17,7 @@
       <ion-input type="password"> </ion-input>
     </ion-item>
     <br>
-    <ion-button expand="block">Ingresar</ion-button>
+    <ion-button color="warning" [routerLink]="['/registrar']" expand="block">Ingresar</ion-button>
     <br>
 
     <ion-router-link href="#" class="underline">Olvide mi clave de acceso</ion-router-link>
