@@ -1,3 +1,24 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu-toggle auto-hide="false">
+    <ion-menu side="start" menuId="first" contentId="main">
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>Start Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-item [routerLink]="'/registrado'">
+            <ion-icon name="key-outline"></ion-icon>
+            Login</ion-item>
+          <ion-item [routerLink]="'/fddrdd'">Home</ion-item>
+          <ion-item>Menu Item</ion-item>
+          <ion-item>Menu Item</ion-item>
+          <ion-item>Menu Item</ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+  </ion-menu-toggle>
+  
+    <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
