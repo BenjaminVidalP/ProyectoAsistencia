@@ -18,7 +18,11 @@ const routes: Routes = [
   {
     path: 'registrado',
     loadChildren: () => import('./pages/registrado/registrado.module').then( m => m.RegistradoPageModule)
+  },  {
+    path: 'qrasistencia',
+    loadChildren: () => import('./pages/qrasistencia/qrasistencia.module').then( m => m.QRasistenciaPageModule)
   },
+
 ];
 
 @NgModule({
