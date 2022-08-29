@@ -69,3 +69,11 @@ ion-content{
 .letras{
   color: #fff;
 }
+
+.labels{
+  text-align: left;
+}
+
+.labels::after{
+  text-align: left;
+}
