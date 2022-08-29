@@ -22,6 +22,14 @@ const routes: Routes = [
     path: 'qrasistencia',
     loadChildren: () => import('./pages/qrasistencia/qrasistencia.module').then( m => m.QRasistenciaPageModule)
   },
+  {
+    path: 'horario',
+    loadChildren: () => import('./pages/horario/horario.module').then( m => m.HorarioPageModule)
+  },
+  {
+    path: 'profesores',
+    loadChildren: () => import('./pages/profesores/profesores.module').then( m => m.ProfesoresPageModule)
+  },
 
 ];
 
