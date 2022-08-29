@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -9,6 +10,8 @@ export class HomePage {
   string="";
   
 
-  constructor() {}
+  constructor(private menu: MenuController) {
+    this.menu.enable(false);
+  }
 
 }
