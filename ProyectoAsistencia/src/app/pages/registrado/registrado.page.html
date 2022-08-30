@@ -10,7 +10,9 @@
 <ion-content>
   <ion-card class="cardHorario">
     <ion-card-header>
-      <ion-card-subtitle>Horario alumno</ion-card-subtitle>
+      <ion-card-subtitle>Horario alumno <div>
+        {{myDate | date }}
+      </div></ion-card-subtitle>
       <ion-card-title>Horario</ion-card-title>
     </ion-card-header>
   
@@ -29,6 +31,8 @@
       <ion-button color="warning" [routerLink]="['/profesores']" >Ir a profesores</ion-button>
     </ion-card-content>
   </ion-card>
+
+
 </ion-content>
 
 
