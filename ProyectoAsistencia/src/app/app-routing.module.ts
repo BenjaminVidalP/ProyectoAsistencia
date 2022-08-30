@@ -18,7 +18,8 @@ const routes: Routes = [
   {
     path: 'registrado',
     loadChildren: () => import('./pages/registrado/registrado.module').then( m => m.RegistradoPageModule)
-  },  {
+  },
+  {
     path: 'qrasistencia',
     loadChildren: () => import('./pages/qrasistencia/qrasistencia.module').then( m => m.QRasistenciaPageModule)
   },
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path: 'profesores',
     loadChildren: () => import('./pages/profesores/profesores.module').then( m => m.ProfesoresPageModule)
+  },
+  {
+    path: '**',
+    loadChildren: () => import('./pages/not-found/not-found.module').then( m => m.NotFoundPageModule)
   },
 
 ];
