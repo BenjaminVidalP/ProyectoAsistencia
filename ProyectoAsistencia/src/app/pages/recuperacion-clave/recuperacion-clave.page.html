@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="warning">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div id="container">
+    <h2 class="letras">¡Bienvenidos!</h2>
+    <ion-item class="recuadros-login" >
+      <ion-label  position="floating" class="labels">Usuario</ion-label>
+      <ion-input ></ion-input>
+    </ion-item>
+
+    <ion-item class="recuadros-login">
+      <ion-label position="floating" class="labels">Clave</ion-label>
+      <ion-input type="password"> </ion-input>
+    </ion-item>
+    <ion-button class="botton" color="warning" [routerLink]="['/registrar']" expand="block">Ingresar</ion-button>
+
+    <ion-router-link href="#" class="underline">Olvide mi clave de acceso</ion-router-link>
+
+
+  </div>
+
+</ion-content>

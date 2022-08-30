@@ -34,7 +34,11 @@ const routes: Routes = [
   {
     path: '**',
     loadChildren: () => import('./pages/not-found/not-found.module').then( m => m.NotFoundPageModule)
+  },  {
+    path: 'recuperacion-clave',
+    loadChildren: () => import('./pages/recuperacion-clave/recuperacion-clave.module').then( m => m.RecuperacionClavePageModule)
   },
+
 
 ];
 
