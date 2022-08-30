@@ -8,7 +8,8 @@ import { MenuController } from '@ionic/angular';
 })
 export class RegistrarPage implements OnInit {
 
-  constructor() {
+  constructor(private menu: MenuController) {
+    this.menu.enable(false);
     
    }
 
