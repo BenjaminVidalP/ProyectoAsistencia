@@ -1,0 +1,14 @@
+.menu-header-color{
+    height: 100%;
+    width: 350px;
+    background: linear-gradient(90deg, rgb(221, 201, 75) 0%, rgb(50, 41, 187) 100%);
+}
+
+.menu-items{
+    background: #fff;
+    background: linear-gradient(90deg, rgb(221, 201, 75) 0%, rgb(50, 41, 187) 100%);
+}
+
+ion-content {
+    --ion-background-color: linear-gradient(90deg, rgb(221, 201, 75) 0%, rgb(50, 41, 187) 100%) !important;
+}
