@@ -54,7 +54,11 @@ const routes: Routes = [
   {
     path: '**',
     loadChildren: () => import('./pages/not-found/not-found.module').then( m => m.NotFoundPageModule)
+  },  {
+    path: 'registrr',
+    loadChildren: () => import('./pages/registrr/registrr.module').then( m => m.RegistrrPageModule)
   },
+
 
 
 
