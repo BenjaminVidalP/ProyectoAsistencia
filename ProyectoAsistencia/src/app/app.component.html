@@ -9,10 +9,10 @@
       </ion-header>
       <ion-content>
         <ion-list>
-          <ion-item >
+          <ion-item [routerLink]="['/recuperacion-clave']">
             <ion-icon name="person-circle-outline"></ion-icon>
             Perfil</ion-item>
-          <ion-item [routerLink]="'/home'">
+          <ion-item [routerLink]="['/home']">
             <ion-icon name="log-out-outline"></ion-icon>
           Cerrar Sesion</ion-item>
 
@@ -24,6 +24,4 @@
 <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
 
-<div>
-  {{myDate | date }}
-</div>
+
