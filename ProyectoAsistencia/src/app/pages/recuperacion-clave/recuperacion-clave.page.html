@@ -1,25 +1,40 @@
 <ion-header>
   <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
-  <div id="container">
-    <h2 class="letras">¡Bienvenidos!</h2>
-    <ion-item class="recuadros-login" >
-      <ion-label  position="floating" class="labels">Usuario</ion-label>
-      <ion-input ></ion-input>
+<ion-content>
+  <ion-list>
+    <ion-item >
+      <ion-avatar slot="start">
+        <img src="./avatar.svg" />
+      </ion-avatar>
+      <ion-label>Lorem ipsum</ion-label>
     </ion-item>
-
-    <ion-item class="recuadros-login">
-      <ion-label position="floating" class="labels">Clave</ion-label>
-      <ion-input type="password"> </ion-input>
+    <ion-item>
+      <ion-avatar slot="end">
+        <img src="./avatar.svg" />
+      </ion-avatar>
+      <ion-label>
+        <h3>Lorem ipsum</h3>
+        <p>dolor sit amet</p>
+      </ion-label>
     </ion-item>
-    <ion-button class="botton" color="warning" [routerLink]="['/registrar']" expand="block">Ingresar</ion-button>
+    <ion-item>
+      <ion-avatar slot="end">
+        <img src="./avatar.svg" />
+      </ion-avatar>
+      <ion-label>
+        <h3>Lorem ipsum</h3>
+        <p>dolor sit amet</p>
+        <p>consectetur adipiscing elit. Duis ut urna neque.</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 
-    <ion-router-link href="#" class="underline">Olvide mi clave de acceso</ion-router-link>
-
-
-  </div>
+ 
 
 </ion-content>

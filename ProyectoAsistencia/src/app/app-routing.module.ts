@@ -32,15 +32,16 @@ const routes: Routes = [
     loadChildren: () => import('./pages/profesores/profesores.module').then( m => m.ProfesoresPageModule)
   },
   {
-    path: '**',
-    loadChildren: () => import('./pages/not-found/not-found.module').then( m => m.NotFoundPageModule)
-  },  {
     path: 'recuperacion-clave',
     loadChildren: () => import('./pages/recuperacion-clave/recuperacion-clave.module').then( m => m.RecuperacionClavePageModule)
   },
   {
     path: 'lista',
     loadChildren: () => import('./pages/lista/lista.module').then( m => m.ListaPageModule)
+  },
+  {
+    path: '**',
+    loadChildren: () => import('./pages/not-found/not-found.module').then( m => m.NotFoundPageModule)
   },
 
 
