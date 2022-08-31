@@ -44,9 +44,19 @@ const routes: Routes = [
     loadChildren: () => import('./pages/registro-alum/registro-alum.module').then( m => m.RegistroAlumPageModule)
   },
   {
+    path: 'recuperar-contra',
+    loadChildren: () => import('./pages/recuperar-contra/recuperar-contra.module').then( m => m.RecuperarContraPageModule)
+  },
+  {
+    path: 'input',
+    loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
+  },
+  {
     path: '**',
     loadChildren: () => import('./pages/not-found/not-found.module').then( m => m.NotFoundPageModule)
   },
+
+
 
 
 
