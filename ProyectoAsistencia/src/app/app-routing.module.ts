@@ -40,9 +40,14 @@ const routes: Routes = [
     loadChildren: () => import('./pages/lista/lista.module').then( m => m.ListaPageModule)
   },
   {
+    path: 'registro-alum',
+    loadChildren: () => import('./pages/registro-alum/registro-alum.module').then( m => m.RegistroAlumPageModule)
+  },
+  {
     path: '**',
     loadChildren: () => import('./pages/not-found/not-found.module').then( m => m.NotFoundPageModule)
   },
+
 
 
 ];
