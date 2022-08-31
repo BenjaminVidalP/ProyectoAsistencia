@@ -38,6 +38,10 @@ const routes: Routes = [
     path: 'recuperacion-clave',
     loadChildren: () => import('./pages/recuperacion-clave/recuperacion-clave.module').then( m => m.RecuperacionClavePageModule)
   },
+  {
+    path: 'lista',
+    loadChildren: () => import('./pages/lista/lista.module').then( m => m.ListaPageModule)
+  },
 
 
 ];
